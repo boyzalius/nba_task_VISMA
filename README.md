@@ -19,6 +19,8 @@ This program should also work even on Windows, but that was not tested yet.
 ### Firstly, let's install dependencies
 //THOSE ARE ALREADY INSTALLED IN THIS REPO, BUT YOU CAN STILL EXECUTE THE COMMAND IF YOU MAY LIKE
 
+P.S. If you are lacking permissions for a command, just type sudo before "docker-compose" or add docker to a group of users
+
 ```bash
 docker-compose run --rm composer install
 ```
