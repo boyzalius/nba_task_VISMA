@@ -45,16 +45,16 @@ List NBA teams by input keyword
 docker-compose run --rm cli teams boston
 ```
 
-List NBA games by input date (date format YYYY-MM-DD) let's choose 2021-05-16
+List NBA games by input date (date format YYYY-MM-DD) as an example: 2021-05-16
 ```bash
 docker-compose run --rm cli games 2021-05-16
 ```
-Or by specifying filter
+Or by specifying filter (as an example: date)
 ```bash
 sudo docker-compose run --rm cli games --filter date 2021-05-16
 ```
 
-Or by choosing a seasonal year
+Or by choosing a seasonal year (as an example: 2022)
 
 ```bash
 sudo docker-compose run --rm cli games --filter season 2022
