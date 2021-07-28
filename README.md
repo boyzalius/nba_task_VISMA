@@ -1,17 +1,26 @@
-# THIS IS VISMA NBA-TEAMS TASK UTILIZING THEAPIGUY'S FREE-NBA API :)
+# This is a task for a VISMA company utilizing theapiguy's freenba API :)
+
+## Introduction
+
+Hi, this is a skeleton app for your assessment. It will help you to deal your task without building the app from the scratch!
+
+How to use it?
+* Implement the business logic under `src/` directory
+* Write your unit tests which should be located in here `test/`
 
 ## How to begin?
 
-### FIrst check that your platform has these requirements:
-* Ubuntu or other linux based OS installed
-* Docker 20+  
+### First check that your platform has these requirements
+* Ubuntu or other linux based OS
+* Docker 20+
+            
+This program should also work even on Windows, but that was not tested yet.
 
-### First, let's install dependencies for docker
-
-//THE FILES UPLOADED HERE HAS THESE INSTALLED ALREADY BUT YOU CAN STILL USE THIS COMMAND IF YOU MAY LIKE
+### Firstly, let's install dependencies
+//THOSE ARE ALREADY INSTALLED IN THIS REPO, BUT YOU CAN STILL EXECUTE THE COMMAND IF YOU MAY LIKE
 
 ```bash
-docker-compose run --rm composer install 
+docker-compose run --rm composer install
 ```
 
 ### How to run tests?
@@ -21,31 +30,37 @@ docker-compose run --rm phpunit
 
 ### How to run the program?
 
-Help command with program documentation
+Execute help command with program documentation
 ```bash
 docker-compose run --rm cli
 ```
 
-### List all NBA teams
+List all NBA teams
 ```bash
 docker-compose run --rm cli teams
 ```
 
-### List NBA teams by keyword
+List NBA teams by input keyword
 ```bash
 docker-compose run --rm cli teams boston
+```
 
-### List NBA games by date (date format YYYY-MM-DD)
-//IF THERE ARE NONE - YOU WILL GET NO RESULTS
-
+List NBA games by input date (date format YYYY-MM-DD) let's choose 2021-05-16
+```bash
 docker-compose run --rm cli games 2021-05-16
-
-
-### You can also list games by specifying filter that you may like (let's choose: 2021-05-16)
-
+```
+Or by specifying filter
+```bash
 sudo docker-compose run --rm cli games --filter date 2021-05-16
+```
 
-### Or you can list those games by choosing the season as you may like (let's choose: 2022)
+Or by choosing a seasonal year
 
+```bash
 sudo docker-compose run --rm cli games --filter season 2022
 ```
+
+
+
+
+
