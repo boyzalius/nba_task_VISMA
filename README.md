@@ -6,7 +6,10 @@
 * Ubuntu or other linux based OS installed
 * Docker 20+  
 
-### Firstly we install dependencies for docker
+### First, let's install dependencies for docker
+
+//THE FILES UPLOADED HERE HAS THESE INSTALLED ALREADY BUT YOU CAN STILL USE THIS COMMAND IF YOU MAY LIKE
+
 ```bash
 docker-compose run --rm composer install 
 ```
